@@ -17,11 +17,11 @@ class InequalitySimulator {
             this.apiBase = '/api';
         } else if (isLocalhost) {
             // Local development
-            this.apiBase = 'http://localhost:5000/api';
+            this.apiBase = 'http://localhost:5001/api';
         } else {
             // Local network access (e.g. mobile testing)
             const apiProtocol = protocol === 'https:' ? 'https:' : 'http:';
-            this.apiBase = `${apiProtocol}//192.168.50.4:5000/api`;
+            this.apiBase = `${apiProtocol}//192.168.50.4:5001/api`;
         }
 
         this.testBackendConnection();
